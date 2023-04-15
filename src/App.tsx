@@ -23,6 +23,7 @@ const App = () => {
   const modalRestaurant = findModalRestaurant();
 
   useEffect(() => {
+    console.log('useEffect실행');
     const savedRestaurants = getLocalStorage(LOCAL_STORAGE_KEY.RESTAURANT);
 
     if (savedRestaurants) {
