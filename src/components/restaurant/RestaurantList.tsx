@@ -17,7 +17,8 @@ const RestaurantList = ({ restaurantList, setModalRestaurantId }: RestaurantList
   const filterAndSort = () => {
     return restaurant.sort(restaurant.filter(restaurantList, filterOption), sortOption);
   };
-  console.log('item: ' + restaurantList);
+  console.log('item: ');
+  console.log(restaurantList);
 
   return (
     <RestaurantListLayout>

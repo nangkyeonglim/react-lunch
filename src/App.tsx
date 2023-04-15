@@ -11,7 +11,7 @@ import RestaurantDetail from './components/restaurant/RestaurantDetail';
 const App = () => {
   const [modalRestaurantId, setModalRestaurantId] = useState<null | number>(null);
   const [restaurantList, setRestaurantList] = useState(mockData as Restaurant[]);
-  console.log('App' + restaurantList);
+
   const findModalRestaurant = () => {
     return restaurantList.find((restaurant) => restaurant.id === modalRestaurantId);
   };
@@ -31,6 +31,8 @@ const App = () => {
     } else setLocalStorage(LOCAL_STORAGE_KEY.RESTAURANT, mockData);
   }, []);
 
+  console.log('app');
+  console.log(restaurantList);
   return (
     <>
       <Header />
