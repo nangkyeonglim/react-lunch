@@ -3,7 +3,7 @@ import RestaurantCategoryIcon from './RestaurantCategoryIcon';
 import { Restaurant } from '../../@types/type';
 import { BodyText, SubTitleText } from '../../style/typography';
 import { useContext } from 'react';
-import { RestaurantDetailModalContext } from './RestaurantFinder';
+import { RestaurantDetailModalContext } from '../../contexts/RestaurantDetailModalContext';
 
 type RestaurantItemProps = { restaurant: Restaurant };
 
